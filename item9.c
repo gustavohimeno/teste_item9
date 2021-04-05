@@ -1,19 +1,19 @@
 #include <stdio.h>
 
-//function for length calculation
+//função para cálculo do comprimento de string
 int calc_length(char *str);
 
 int main()
     {
-    //variables declaration
+    //declaração de variáveis
     int lim = 1002;
     int length;
     char phrase[lim];
     
-    //asks the user to input a phrase
+    //solicita que o usuário digite a string que deseja avaliar no máximo de 1000 caracteres
     puts("Type a phrase (max = 1000 characteres): ");
     
-    //receives user input
+    //recebe a string digitada pelo usuário
     if (fgets(phrase, sizeof(phrase), stdin) != NULL)
         {
         length = calc_length(phrase);
